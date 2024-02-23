@@ -91,9 +91,9 @@ const ImageCarousel = () => {
 
   return (
     <div>
-      <p>This is a raw image processing app. It enables users to see thier raw images in jpeg/jpg format and also its metadata.</p>
+      <p className="fs-4 border rounded text-secondary">This is a raw image processing app. It enables users to see thier raw images in jpeg/jpg format and also its metadata.</p>
       {image.length > 0 && (
-        <Row>
+        <Row className="parent-container">
           <Col sm="9">
             <ImageGallery
               thumbnailTitle="name"

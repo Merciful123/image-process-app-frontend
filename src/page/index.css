@@ -1,4 +1,4 @@
- .card-header .card{
-    background-color: #242424 ;
+ .card-header .card .parent-container{
+    background-color: #242424 !important;
 
  }
