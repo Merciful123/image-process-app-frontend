@@ -33,8 +33,12 @@ const ImageCarousel = () => {
 
   useEffect(() => {
     getImage();
+    handleThumbnailClick()
   }, []);
 
+  
+  
+   
 
   // thumbnail details getting function
 
@@ -54,7 +58,7 @@ const ImageCarousel = () => {
    handleImageClick(index || 0);
   };
   
-
+ 
   // Format the images array to match the expected format for react-image-gallery
   const formattedImages = image.map((image, index) => ({
     original: `https://squid-app-doa5g.ondigitalocean.app/${image?.filename}`,
@@ -87,7 +91,8 @@ const ImageCarousel = () => {
 
   return (
     <div>
-      { image.length > 0 && (
+      <p>This is a raw image processing app. It enables users to see thier raw images in jpeg/jpg format and also its metadata.</p>
+      {image.length > 0 && (
         <Row>
           <Col sm="9">
             <ImageGallery
